@@ -20,7 +20,7 @@ class GameController: UIViewController {
     // These are the word options that appear in the UILabel
     var gameString = ["dance", "eat", "drive", "run", "play", "sing", "sleep", "imagine", "beautiful", "laughing", "smiling", "crying", "jumping", "dolphin", "cat", "apple", "tree", "bird"]
    
-    label.text = gameString[0]
+ //   label.text = gameString[0]
     
   //  let gameString
     

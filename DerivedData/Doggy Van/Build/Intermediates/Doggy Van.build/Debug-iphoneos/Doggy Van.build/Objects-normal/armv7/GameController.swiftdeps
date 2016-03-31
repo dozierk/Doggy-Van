@@ -1,133 +1,264 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "GameController"
-- "Verb"
-- "Adjective"
-- "Noun"
 provides-nominal:
 - "C9Doggy_Van14GameController"
 provides-member:
 - ["C9Doggy_Van14GameController", ""]
 provides-dynamic-lookup:
+- "Verb"
 - "Doggy"
+- "buttonPressed"
+- "Adjective"
 - "gameString"
 - "changeLabel"
-depends-top-level:
-- "UIImageView"
-- !private "AVAudioPlayer"
-- "Adjective"
-- "StringLiteralType"
-- "GameController"
 - "Noun"
-- "UIViewController"
-- "Array"
+depends-top-level:
 - "UIButton"
+- !private "AVAudioPlayer"
+- "Array"
+- "UIImageView"
+- "StringLiteralType"
+- "UIViewController"
 - "UILabel"
-- "Verb"
+- "GameController"
 depends-member:
 - !private ["CSo13AVAudioPlayer", "deinit"]
 - !private ["CSo13AVAudioPlayer", "valueForKey"]
+- !private ["Ps9AnyObject", "AVAudioPlayer"]
+- ["Ps9AnyObject", "Adjective"]
 - ["Ps9AnyObject", "Doggy"]
+- ["Ps9AnyObject", "Noun"]
+- ["Ps9AnyObject", "Verb"]
+- ["Ps9AnyObject", "buttonPressed"]
 - ["Ps9AnyObject", "changeLabel"]
 - ["Ps9AnyObject", "gameString"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "valueForKey"]
 - ["Ps9AnyObject", ""]
 - ["Sa", "Element"]
 - ["Ps23ArrayLiteralConvertible", "Element"]
+- !private ["Ps11CVarArgType", "AVAudioPlayer"]
+- ["Ps11CVarArgType", "Adjective"]
 - ["Ps11CVarArgType", "Doggy"]
+- ["Ps11CVarArgType", "Noun"]
+- ["Ps11CVarArgType", "Verb"]
+- ["Ps11CVarArgType", "buttonPressed"]
 - ["Ps11CVarArgType", "changeLabel"]
 - ["Ps11CVarArgType", "gameString"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "text"]
 - !private ["Ps11CVarArgType", "valueForKey"]
 - ["Ps11CVarArgType", ""]
 - ["Ps14CollectionType", "Element"]
+- !private ["Ps28CustomDebugStringConvertible", "AVAudioPlayer"]
+- ["Ps28CustomDebugStringConvertible", "Adjective"]
 - ["Ps28CustomDebugStringConvertible", "Doggy"]
 - ["Ps28CustomDebugStringConvertible", "Element"]
+- ["Ps28CustomDebugStringConvertible", "Noun"]
+- ["Ps28CustomDebugStringConvertible", "Verb"]
+- ["Ps28CustomDebugStringConvertible", "buttonPressed"]
 - ["Ps28CustomDebugStringConvertible", "changeLabel"]
 - ["Ps28CustomDebugStringConvertible", "gameString"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "valueForKey"]
 - ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "AVAudioPlayer"]
+- ["Ps23CustomStringConvertible", "Adjective"]
 - ["Ps23CustomStringConvertible", "Doggy"]
 - ["Ps23CustomStringConvertible", "Element"]
+- ["Ps23CustomStringConvertible", "Noun"]
+- ["Ps23CustomStringConvertible", "Verb"]
+- ["Ps23CustomStringConvertible", "buttonPressed"]
 - ["Ps23CustomStringConvertible", "changeLabel"]
 - ["Ps23CustomStringConvertible", "gameString"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "valueForKey"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "AVAudioPlayer"]
+- ["Ps9Equatable", "Adjective"]
 - ["Ps9Equatable", "Doggy"]
+- ["Ps9Equatable", "Noun"]
+- ["Ps9Equatable", "Verb"]
+- ["Ps9Equatable", "buttonPressed"]
 - ["Ps9Equatable", "changeLabel"]
 - ["Ps9Equatable", "gameString"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "valueForKey"]
 - ["Ps9Equatable", ""]
+- !private ["C9Doggy_Van14GameController", "AVAudioPlayer"]
+- ["C9Doggy_Van14GameController", "Adjective"]
 - ["C9Doggy_Van14GameController", "Doggy"]
+- ["C9Doggy_Van14GameController", "Noun"]
+- ["C9Doggy_Van14GameController", "UIButton"]
 - ["C9Doggy_Van14GameController", "UIImageView"]
 - ["C9Doggy_Van14GameController", "UILabel"]
+- ["C9Doggy_Van14GameController", "Verb"]
+- ["C9Doggy_Van14GameController", "buttonPressed"]
 - ["C9Doggy_Van14GameController", "changeLabel"]
 - ["C9Doggy_Van14GameController", "deinit"]
 - ["C9Doggy_Van14GameController", "gameString"]
+- ["C9Doggy_Van14GameController", "init"]
+- !private ["Ps8Hashable", "AVAudioPlayer"]
+- ["Ps8Hashable", "Adjective"]
 - ["Ps8Hashable", "Doggy"]
+- ["Ps8Hashable", "Noun"]
+- ["Ps8Hashable", "Verb"]
+- ["Ps8Hashable", "buttonPressed"]
 - ["Ps8Hashable", "changeLabel"]
 - ["Ps8Hashable", "gameString"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "valueForKey"]
 - ["Ps8Hashable", ""]
 - ["Ps9Indexable", "Element"]
 - ["Ps21MutableCollectionType", "Element"]
 - ["Ps16MutableIndexable", "Element"]
 - ["Ps16MutableSliceable", "Element"]
+- !private ["PSo8NSCoding", "AVAudioPlayer"]
+- ["PSo8NSCoding", "Adjective"]
 - ["PSo8NSCoding", "Doggy"]
+- ["PSo8NSCoding", "Noun"]
+- ["PSo8NSCoding", "Verb"]
+- ["PSo8NSCoding", "buttonPressed"]
 - ["PSo8NSCoding", "changeLabel"]
 - ["PSo8NSCoding", "gameString"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo26NSExtensionRequestHandling", "AVAudioPlayer"]
+- ["PSo26NSExtensionRequestHandling", "Adjective"]
 - ["PSo26NSExtensionRequestHandling", "Doggy"]
+- ["PSo26NSExtensionRequestHandling", "Noun"]
+- ["PSo26NSExtensionRequestHandling", "Verb"]
+- ["PSo26NSExtensionRequestHandling", "buttonPressed"]
 - ["PSo26NSExtensionRequestHandling", "changeLabel"]
 - ["PSo26NSExtensionRequestHandling", "gameString"]
+- ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", ""]
+- !private ["CSo8NSObject", "AVAudioPlayer"]
+- ["CSo8NSObject", "Adjective"]
 - ["CSo8NSObject", "Doggy"]
+- ["CSo8NSObject", "Noun"]
+- ["CSo8NSObject", "UIButton"]
 - ["CSo8NSObject", "UIImageView"]
 - ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "Verb"]
+- ["CSo8NSObject", "buttonPressed"]
 - ["CSo8NSObject", "changeLabel"]
 - ["CSo8NSObject", "gameString"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "valueForKey"]
+- !private ["PSo16NSObjectProtocol", "AVAudioPlayer"]
+- ["PSo16NSObjectProtocol", "Adjective"]
 - ["PSo16NSObjectProtocol", "Doggy"]
+- ["PSo16NSObjectProtocol", "Noun"]
+- ["PSo16NSObjectProtocol", "Verb"]
+- ["PSo16NSObjectProtocol", "buttonPressed"]
 - ["PSo16NSObjectProtocol", "changeLabel"]
 - ["PSo16NSObjectProtocol", "gameString"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "valueForKey"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["Sq", "deinit"]
 - ["Ps30RangeReplaceableCollectionType", "Element"]
 - ["Ps12SequenceType", "Element"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo12UIAppearance", "text"]
+- !private ["PSo21UIAppearanceContainer", "AVAudioPlayer"]
+- ["PSo21UIAppearanceContainer", "Adjective"]
 - ["PSo21UIAppearanceContainer", "Doggy"]
+- ["PSo21UIAppearanceContainer", "Noun"]
+- ["PSo21UIAppearanceContainer", "Verb"]
+- ["PSo21UIAppearanceContainer", "buttonPressed"]
 - ["PSo21UIAppearanceContainer", "changeLabel"]
 - ["PSo21UIAppearanceContainer", "gameString"]
+- ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "text"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "AVAudioPlayer"]
+- ["PSo18UIContentContainer", "Adjective"]
 - ["PSo18UIContentContainer", "Doggy"]
+- ["PSo18UIContentContainer", "Noun"]
+- ["PSo18UIContentContainer", "Verb"]
+- ["PSo18UIContentContainer", "buttonPressed"]
 - ["PSo18UIContentContainer", "changeLabel"]
 - ["PSo18UIContentContainer", "gameString"]
+- ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo18UIFocusEnvironment", "AVAudioPlayer"]
+- ["PSo18UIFocusEnvironment", "Adjective"]
 - ["PSo18UIFocusEnvironment", "Doggy"]
+- ["PSo18UIFocusEnvironment", "Noun"]
+- ["PSo18UIFocusEnvironment", "Verb"]
+- ["PSo18UIFocusEnvironment", "buttonPressed"]
 - ["PSo18UIFocusEnvironment", "changeLabel"]
 - ["PSo18UIFocusEnvironment", "gameString"]
+- ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "text"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo7UILabel", "text"]
+- !private ["CSo11UIResponder", "AVAudioPlayer"]
+- ["CSo11UIResponder", "Adjective"]
 - ["CSo11UIResponder", "Doggy"]
+- ["CSo11UIResponder", "Noun"]
+- ["CSo11UIResponder", "UIButton"]
 - ["CSo11UIResponder", "UIImageView"]
 - ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "Verb"]
+- ["CSo11UIResponder", "buttonPressed"]
 - ["CSo11UIResponder", "changeLabel"]
 - ["CSo11UIResponder", "gameString"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "text"]
+- !private ["PSo16UIStateRestoring", "AVAudioPlayer"]
+- ["PSo16UIStateRestoring", "Adjective"]
 - ["PSo16UIStateRestoring", "Doggy"]
+- ["PSo16UIStateRestoring", "Noun"]
+- ["PSo16UIStateRestoring", "Verb"]
+- ["PSo16UIStateRestoring", "buttonPressed"]
 - ["PSo16UIStateRestoring", "changeLabel"]
 - ["PSo16UIStateRestoring", "gameString"]
+- ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "AVAudioPlayer"]
+- ["PSo18UITraitEnvironment", "Adjective"]
 - ["PSo18UITraitEnvironment", "Doggy"]
+- ["PSo18UITraitEnvironment", "Noun"]
+- ["PSo18UITraitEnvironment", "Verb"]
+- ["PSo18UITraitEnvironment", "buttonPressed"]
 - ["PSo18UITraitEnvironment", "changeLabel"]
 - ["PSo18UITraitEnvironment", "gameString"]
+- ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "text"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "text"]
+- !private ["CSo16UIViewController", "AVAudioPlayer"]
+- ["CSo16UIViewController", "Adjective"]
 - ["CSo16UIViewController", "Doggy"]
+- ["CSo16UIViewController", "Noun"]
+- ["CSo16UIViewController", "UIButton"]
 - ["CSo16UIViewController", "UIImageView"]
 - ["CSo16UIViewController", "UILabel"]
+- ["CSo16UIViewController", "Verb"]
+- ["CSo16UIViewController", "buttonPressed"]
 - ["CSo16UIViewController", "changeLabel"]
 - ["CSo16UIViewController", "gameString"]
+- ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", ""]
 - ["Ps10_ArrayType", "Element"]
 - ["Ps24_DestructorSafeContainer", "Element"]
 - ["Ps21_ObjectiveCBridgeable", "Element"]
 - ["Ps12_Reflectable", "Element"]
+- !private ["Ps12_Reflectable", "text"]
 depends-nominal:
 - !private "CSo13AVAudioPlayer"
 - "Ps9AnyObject"
@@ -148,14 +279,21 @@ depends-nominal:
 - "PSo26NSExtensionRequestHandling"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "Sq"
 - "Ps30RangeReplaceableCollectionType"
 - "Ps12SequenceType"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
 - "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
+- !private "CSo7UILabel"
 - "CSo11UIResponder"
 - "PSo16UIStateRestoring"
 - "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
 - "CSo16UIViewController"
 - "Ps10_ArrayType"
 - "Ps24_DestructorSafeContainer"
@@ -174,4 +312,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreAudio.swiftmodule"
-interface-hash: "61f1c06a2f418fd2ec29d3d16a7f33af"
+interface-hash: "0022fba7e51917fe77a7e19cb76d455d"

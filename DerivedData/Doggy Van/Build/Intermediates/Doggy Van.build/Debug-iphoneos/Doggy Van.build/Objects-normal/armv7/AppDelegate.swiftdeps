@@ -6,23 +6,23 @@ provides-nominal:
 provides-member:
 - ["C9Doggy_Van11AppDelegate", ""]
 provides-dynamic-lookup:
-- "application"
-- "applicationDidEnterBackground"
-- "applicationWillResignActive"
-- "applicationWillTerminate"
-- "applicationWillEnterForeground"
 - "applicationDidBecomeActive"
+- "applicationWillEnterForeground"
 - "window"
+- "applicationDidEnterBackground"
+- "applicationWillTerminate"
+- "application"
+- "applicationWillResignActive"
 depends-top-level:
-- "UIWindow"
-- "AnyObject"
-- "UIResponder"
-- "NSObject"
-- "AppDelegate"
 - !private "BooleanLiteralType"
+- "UIResponder"
+- "AppDelegate"
 - "UIApplication"
-- "Bool"
+- "UIWindow"
+- "NSObject"
 - "UIApplicationDelegate"
+- "Bool"
+- "AnyObject"
 depends-member:
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]
