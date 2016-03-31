@@ -17,18 +17,19 @@ class GameController: UIViewController {
     
     @IBOutlet weak var changeLabel: UILabel!
     
-    
+    // These are the word options that appear in the UILabel
     var gameString = ["dance", "eat", "drive", "run", "play", "sing", "sleep", "imagine", "beautiful", "laughing", "smiling", "crying", "jumping", "dolphin", "cat", "apple", "tree", "bird"]
    
     label.text = gameString[0]
     
-    let gameString
+  //  let gameString
     
-    myStrings.first
+    
+    
 
-    }
 
-
+    // The verb, adjective, and noun are the only options that could pertain to the label
+    
     @IBAction func Verb(sender: UIButton) {
         
     }
@@ -40,5 +41,13 @@ class GameController: UIViewController {
     @IBAction func Noun(sender: UIButton) {
         
         AVAudioPlayer.valueForKey("let dog bark when answer is incorrect")
+
+    }
+ 
+    // When the next button is pressed, the text in the label will change
+    
+    @IBAction func buttonPressed(sender: UIButton) {
+        changeLabel.text = "dance", "eat", "drive", "run", "play", "sing", "sleep", "imagine", "beautiful", "laughing", "smiling", "crying", "jumping", "dolphin", "cat", "apple", "tree", "bird"
+    }
 
 }

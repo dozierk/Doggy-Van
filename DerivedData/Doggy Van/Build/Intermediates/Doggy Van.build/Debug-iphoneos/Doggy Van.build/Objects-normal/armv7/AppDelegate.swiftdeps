@@ -7,21 +7,21 @@ provides-member:
 - ["C9Doggy_Van11AppDelegate", ""]
 provides-dynamic-lookup:
 - "application"
-- "applicationWillTerminate"
-- "applicationWillResignActive"
 - "applicationDidEnterBackground"
+- "applicationWillResignActive"
+- "applicationWillTerminate"
 - "applicationWillEnterForeground"
 - "applicationDidBecomeActive"
 - "window"
 depends-top-level:
-- "UIResponder"
 - "UIWindow"
+- "AnyObject"
+- "UIResponder"
 - "NSObject"
-- !private "BooleanLiteralType"
 - "AppDelegate"
+- !private "BooleanLiteralType"
 - "UIApplication"
 - "Bool"
-- "AnyObject"
 - "UIApplicationDelegate"
 depends-member:
 - ["Ps9AnyObject", "application"]

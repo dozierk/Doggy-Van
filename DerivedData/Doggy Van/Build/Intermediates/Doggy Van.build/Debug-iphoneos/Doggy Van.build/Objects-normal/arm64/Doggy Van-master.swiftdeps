@@ -1,0 +1,7 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
+options: "a8e740548ddf7b764a411163ca779098"
+build_time: [512697501, 412486000]
+inputs:
+  "/Applications/App Folder/Doggy Van/Doggy Van/GameController.swift": !private [512673186, 0]
+  "/Applications/App Folder/Doggy Van/Doggy Van/Animation.swift": !dirty [510986354, 0]
+  "/Applications/App Folder/Doggy Van/Doggy Van/AppDelegate.swift": !dirty [508651078, 0]
