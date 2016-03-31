@@ -11,7 +11,7 @@ import AVFoundation
 
 
 class GameController: UIViewController {
-
+    
     
     @IBOutlet var Doggy: UIImageView!
     
@@ -19,16 +19,13 @@ class GameController: UIViewController {
     
     
     var gameString = ["dance", "eat", "drive", "run", "play", "sing", "sleep", "imagine", "beautiful", "laughing", "smiling", "crying", "jumping", "dolphin", "cat", "apple", "tree", "bird"]
-   
-    label.text = gameString[0]
     
-    let gameString
     
-    myStrings.first
-
+    override func viewDidLoad() {
+        changeLabel.text = gameString[0]
     }
-
-
+    
+    
     @IBAction func Verb(sender: UIButton) {
         
     }
@@ -36,9 +33,10 @@ class GameController: UIViewController {
     @IBAction func Adjective(sender: UIButton) {
         
     }
-
+    
     @IBAction func Noun(sender: UIButton) {
         
         AVAudioPlayer.valueForKey("let dog bark when answer is incorrect")
-
+        
+    }
 }
