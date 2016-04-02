@@ -1,0 +1,7 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
+options: "5f829e80021fc778ec6a662313f3134e"
+build_time: [512876327, 355867000]
+inputs:
+  "/Users/kaylad/Doggy-Van/Doggy Van/GameController.swift": !dirty [512710698, 0]
+  "/Users/kaylad/Doggy-Van/Doggy Van/Animation.swift": !dirty [512710698, 0]
+  "/Users/kaylad/Doggy-Van/Doggy Van/AppDelegate.swift": !dirty [512710698, 0]
