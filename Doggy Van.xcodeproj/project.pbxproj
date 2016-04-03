@@ -15,7 +15,6 @@
 		E92BCC9E1C6EE146009A220A /* Doggy_VanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92BCC9D1C6EE146009A220A /* Doggy_VanTests.swift */; };
 		E92BCCA91C6EE146009A220A /* Doggy_VanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92BCCA81C6EE146009A220A /* Doggy_VanUITests.swift */; };
 		E92BCCB71C6EE197009A220A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92BCCB61C6EE197009A220A /* AVFoundation.framework */; };
-		E92BCD011C704E0D009A220A /* Dog, Doggy.wav in Resources */ = {isa = PBXBuildFile; fileRef = E92BCD001C704E0D009A220A /* Dog, Doggy.wav */; };
 		E92BCD051C70F9E9009A220A /* Dog crying in pain.wav in Resources */ = {isa = PBXBuildFile; fileRef = E92BCD041C70F9E9009A220A /* Dog crying in pain.wav */; };
 		E9B2DA841C94FF6200016A71 /* Dogpic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9B2DA831C94FF6200016A71 /* Dogpic.jpg */; };
 		E9B37D451C8BE227007EDAA7 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B37D441C8BE227007EDAA7 /* MediaPlayer.framework */; };
@@ -55,7 +54,6 @@
 		E92BCCA81C6EE146009A220A /* Doggy_VanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doggy_VanUITests.swift; sourceTree = "<group>"; };
 		E92BCCAA1C6EE146009A220A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E92BCCB61C6EE197009A220A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		E92BCD001C704E0D009A220A /* Dog, Doggy.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Dog, Doggy.wav"; path = "../../Dog, Doggy.wav"; sourceTree = "<group>"; };
 		E92BCD041C70F9E9009A220A /* Dog crying in pain.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Dog crying in pain.wav"; sourceTree = "<group>"; };
 		E9B2DA831C94FF6200016A71 /* Dogpic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Dogpic.jpg; sourceTree = "<group>"; };
 		E9B37D441C8BE227007EDAA7 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -120,7 +118,6 @@
 				E9B37D561C8E9DCA007EDAA7 /* Animation.swift */,
 				E92BCC8C1C6EE146009A220A /* Main.storyboard */,
 				E9B2DA831C94FF6200016A71 /* Dogpic.jpg */,
-				E92BCD001C704E0D009A220A /* Dog, Doggy.wav */,
 				E92BCD041C70F9E9009A220A /* Dog crying in pain.wav */,
 				E92BCC8F1C6EE146009A220A /* Assets.xcassets */,
 				E92BCC911C6EE146009A220A /* LaunchScreen.storyboard */,
@@ -265,7 +262,6 @@
 				E9B2DA841C94FF6200016A71 /* Dogpic.jpg in Resources */,
 				E92BCC901C6EE146009A220A /* Assets.xcassets in Resources */,
 				E92BCC8E1C6EE146009A220A /* Main.storyboard in Resources */,
-				E92BCD011C704E0D009A220A /* Dog, Doggy.wav in Resources */,
 				E92BCD051C70F9E9009A220A /* Dog crying in pain.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
