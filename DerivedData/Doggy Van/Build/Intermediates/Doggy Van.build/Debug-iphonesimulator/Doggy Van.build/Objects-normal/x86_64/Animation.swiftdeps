@@ -7,31 +7,33 @@ provides-member:
 - ["C9Doggy_Van9Animation", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Animation"
 - "AVAudioPlayer"
+- "Animation"
 depends-member:
 - ["CSo13AVAudioPlayer", "init"]
 - ["C9Doggy_Van9Animation", "AVAudioPlayer"]
 - ["C9Doggy_Van9Animation", "audioPlayer"]
 - ["C9Doggy_Van9Animation", "deinit"]
 - ["C9Doggy_Van9Animation", "init"]
-- ["PSs9AnyObject", "AVAudioPlayer"]
-- ["PSs9AnyObject", "init"]
-- ["PSs9AnyObject", ""]
-- ["PSs11CVarArgType", "init"]
-- ["PSs23CustomStringConvertible", "init"]
-- ["PSs9Equatable", "init"]
-- ["PSs8Hashable", "init"]
+- ["Ps9AnyObject", "AVAudioPlayer"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", ""]
+- ["Ps11CVarArgType", "init"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps9Equatable", "init"]
+- ["Ps8Hashable", "init"]
 - ["CSo8NSObject", "init"]
 - ["PSo16NSObjectProtocol", "init"]
 depends-nominal:
 - "CSo13AVAudioPlayer"
 - "C9Doggy_Van9Animation"
-- "PSs9AnyObject"
-- "PSs11CVarArgType"
-- "PSs23CustomStringConvertible"
-- "PSs9Equatable"
-- "PSs8Hashable"
+- "Ps9AnyObject"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 depends-dynamic-lookup:

@@ -14,5 +14,7 @@ class Animation {
     
     var audioPlayer = AVAudioPlayer()
     
+
+    
 }
 
