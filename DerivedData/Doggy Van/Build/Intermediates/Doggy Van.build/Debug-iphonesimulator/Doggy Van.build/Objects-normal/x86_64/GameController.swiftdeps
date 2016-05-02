@@ -6,27 +6,27 @@ provides-nominal:
 provides-member:
 - ["C9Doggy_Van14GameController", ""]
 provides-dynamic-lookup:
-- "Adjective"
-- "Dogpic"
-- "audioPlayer"
-- "Verb"
 - "changeLabel"
 - "gameString"
-- "viewDidLoad"
 - "Noun"
-- "buttonPressed"
 - "timer"
+- "dogBlinks"
+- "Dogpic"
+- "viewDidLoad"
+- "Adjective"
+- "Verb"
+- "audioPlayer"
+- "buttonPressed"
 depends-top-level:
-- "NSTimer"
-- "UIImageView"
-- "AVAudioPlayer"
+- "GameController"
 - "UIButton"
 - "UILabel"
-- "GameController"
-- !private "UIColor"
-- "Array"
 - "StringLiteralType"
 - "UIViewController"
+- "NSTimer"
+- "Array"
+- "UIImageView"
+- "AVAudioPlayer"
 depends-member:
 - ["CSo13AVAudioPlayer", "init"]
 - ["Ps9AnyObject", "AVAudioPlayer"]
@@ -34,17 +34,14 @@ depends-member:
 - ["Ps9AnyObject", "Dogpic"]
 - ["Ps9AnyObject", "NSTimer"]
 - ["Ps9AnyObject", "Noun"]
-- !private ["Ps9AnyObject", "UIColor"]
 - ["Ps9AnyObject", "Verb"]
 - ["Ps9AnyObject", "audioPlayer"]
-- !private ["Ps9AnyObject", "backgroundColor"]
-- !private ["Ps9AnyObject", "blueColor"]
 - ["Ps9AnyObject", "buttonPressed"]
 - ["Ps9AnyObject", "changeLabel"]
+- ["Ps9AnyObject", "dogBlinks"]
 - ["Ps9AnyObject", "gameString"]
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "timer"]
-- !private ["Ps9AnyObject", "view"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
 - ["Sa", "Element"]
@@ -54,17 +51,14 @@ depends-member:
 - ["Ps11CVarArgType", "Dogpic"]
 - ["Ps11CVarArgType", "NSTimer"]
 - ["Ps11CVarArgType", "Noun"]
-- !private ["Ps11CVarArgType", "UIColor"]
 - ["Ps11CVarArgType", "Verb"]
 - ["Ps11CVarArgType", "audioPlayer"]
-- !private ["Ps11CVarArgType", "backgroundColor"]
-- !private ["Ps11CVarArgType", "blueColor"]
 - ["Ps11CVarArgType", "buttonPressed"]
 - ["Ps11CVarArgType", "changeLabel"]
+- ["Ps11CVarArgType", "dogBlinks"]
 - ["Ps11CVarArgType", "gameString"]
 - ["Ps11CVarArgType", "init"]
 - ["Ps11CVarArgType", "timer"]
-- !private ["Ps11CVarArgType", "view"]
 - ["Ps11CVarArgType", "viewDidLoad"]
 - ["Ps11CVarArgType", ""]
 - ["Ps14CollectionType", "Element"]
@@ -74,17 +68,14 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "Element"]
 - ["Ps28CustomDebugStringConvertible", "NSTimer"]
 - ["Ps28CustomDebugStringConvertible", "Noun"]
-- !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - ["Ps28CustomDebugStringConvertible", "Verb"]
 - ["Ps28CustomDebugStringConvertible", "audioPlayer"]
-- !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
-- !private ["Ps28CustomDebugStringConvertible", "blueColor"]
 - ["Ps28CustomDebugStringConvertible", "buttonPressed"]
 - ["Ps28CustomDebugStringConvertible", "changeLabel"]
+- ["Ps28CustomDebugStringConvertible", "dogBlinks"]
 - ["Ps28CustomDebugStringConvertible", "gameString"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "timer"]
-- !private ["Ps28CustomDebugStringConvertible", "view"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - ["Ps23CustomStringConvertible", "AVAudioPlayer"]
@@ -93,17 +84,14 @@ depends-member:
 - ["Ps23CustomStringConvertible", "Element"]
 - ["Ps23CustomStringConvertible", "NSTimer"]
 - ["Ps23CustomStringConvertible", "Noun"]
-- !private ["Ps23CustomStringConvertible", "UIColor"]
 - ["Ps23CustomStringConvertible", "Verb"]
 - ["Ps23CustomStringConvertible", "audioPlayer"]
-- !private ["Ps23CustomStringConvertible", "backgroundColor"]
-- !private ["Ps23CustomStringConvertible", "blueColor"]
 - ["Ps23CustomStringConvertible", "buttonPressed"]
 - ["Ps23CustomStringConvertible", "changeLabel"]
+- ["Ps23CustomStringConvertible", "dogBlinks"]
 - ["Ps23CustomStringConvertible", "gameString"]
 - ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "timer"]
-- !private ["Ps23CustomStringConvertible", "view"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
 - ["Ps9Equatable", "AVAudioPlayer"]
@@ -111,17 +99,14 @@ depends-member:
 - ["Ps9Equatable", "Dogpic"]
 - ["Ps9Equatable", "NSTimer"]
 - ["Ps9Equatable", "Noun"]
-- !private ["Ps9Equatable", "UIColor"]
 - ["Ps9Equatable", "Verb"]
 - ["Ps9Equatable", "audioPlayer"]
-- !private ["Ps9Equatable", "backgroundColor"]
-- !private ["Ps9Equatable", "blueColor"]
 - ["Ps9Equatable", "buttonPressed"]
 - ["Ps9Equatable", "changeLabel"]
+- ["Ps9Equatable", "dogBlinks"]
 - ["Ps9Equatable", "gameString"]
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "timer"]
-- !private ["Ps9Equatable", "view"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
 - ["C9Doggy_Van14GameController", "AVAudioPlayer"]
@@ -130,7 +115,6 @@ depends-member:
 - ["C9Doggy_Van14GameController", "NSTimer"]
 - ["C9Doggy_Van14GameController", "Noun"]
 - ["C9Doggy_Van14GameController", "UIButton"]
-- !private ["C9Doggy_Van14GameController", "UIColor"]
 - ["C9Doggy_Van14GameController", "UIImageView"]
 - ["C9Doggy_Van14GameController", "UILabel"]
 - ["C9Doggy_Van14GameController", "Verb"]
@@ -138,27 +122,24 @@ depends-member:
 - ["C9Doggy_Van14GameController", "buttonPressed"]
 - ["C9Doggy_Van14GameController", "changeLabel"]
 - ["C9Doggy_Van14GameController", "deinit"]
+- ["C9Doggy_Van14GameController", "dogBlinks"]
 - ["C9Doggy_Van14GameController", "gameString"]
 - ["C9Doggy_Van14GameController", "init"]
 - ["C9Doggy_Van14GameController", "timer"]
-- !private ["C9Doggy_Van14GameController", "view"]
 - ["C9Doggy_Van14GameController", "viewDidLoad"]
 - ["Ps8Hashable", "AVAudioPlayer"]
 - ["Ps8Hashable", "Adjective"]
 - ["Ps8Hashable", "Dogpic"]
 - ["Ps8Hashable", "NSTimer"]
 - ["Ps8Hashable", "Noun"]
-- !private ["Ps8Hashable", "UIColor"]
 - ["Ps8Hashable", "Verb"]
 - ["Ps8Hashable", "audioPlayer"]
-- !private ["Ps8Hashable", "backgroundColor"]
-- !private ["Ps8Hashable", "blueColor"]
 - ["Ps8Hashable", "buttonPressed"]
 - ["Ps8Hashable", "changeLabel"]
+- ["Ps8Hashable", "dogBlinks"]
 - ["Ps8Hashable", "gameString"]
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "timer"]
-- !private ["Ps8Hashable", "view"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
 - ["Ps9Indexable", "Element"]
@@ -170,34 +151,29 @@ depends-member:
 - ["PSo8NSCoding", "Dogpic"]
 - ["PSo8NSCoding", "NSTimer"]
 - ["PSo8NSCoding", "Noun"]
-- !private ["PSo8NSCoding", "UIColor"]
 - ["PSo8NSCoding", "Verb"]
 - ["PSo8NSCoding", "audioPlayer"]
-- !private ["PSo8NSCoding", "backgroundColor"]
-- !private ["PSo8NSCoding", "blueColor"]
 - ["PSo8NSCoding", "buttonPressed"]
 - ["PSo8NSCoding", "changeLabel"]
+- ["PSo8NSCoding", "dogBlinks"]
 - ["PSo8NSCoding", "gameString"]
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "timer"]
-- !private ["PSo8NSCoding", "view"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
-- !private ["PSo9NSCopying", "blueColor"]
 - ["PSo26NSExtensionRequestHandling", "AVAudioPlayer"]
 - ["PSo26NSExtensionRequestHandling", "Adjective"]
 - ["PSo26NSExtensionRequestHandling", "Dogpic"]
 - ["PSo26NSExtensionRequestHandling", "NSTimer"]
 - ["PSo26NSExtensionRequestHandling", "Noun"]
-- !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - ["PSo26NSExtensionRequestHandling", "Verb"]
 - ["PSo26NSExtensionRequestHandling", "audioPlayer"]
 - ["PSo26NSExtensionRequestHandling", "buttonPressed"]
 - ["PSo26NSExtensionRequestHandling", "changeLabel"]
+- ["PSo26NSExtensionRequestHandling", "dogBlinks"]
 - ["PSo26NSExtensionRequestHandling", "gameString"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "timer"]
-- !private ["PSo26NSExtensionRequestHandling", "view"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - ["CSo8NSObject", "AVAudioPlayer"]
@@ -206,95 +182,78 @@ depends-member:
 - ["CSo8NSObject", "NSTimer"]
 - ["CSo8NSObject", "Noun"]
 - ["CSo8NSObject", "UIButton"]
-- !private ["CSo8NSObject", "UIColor"]
 - ["CSo8NSObject", "UIImageView"]
 - ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "Verb"]
 - ["CSo8NSObject", "audioPlayer"]
-- !private ["CSo8NSObject", "backgroundColor"]
-- !private ["CSo8NSObject", "blueColor"]
 - ["CSo8NSObject", "buttonPressed"]
 - ["CSo8NSObject", "changeLabel"]
+- ["CSo8NSObject", "dogBlinks"]
 - ["CSo8NSObject", "gameString"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "timer"]
-- !private ["CSo8NSObject", "view"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "AVAudioPlayer"]
 - ["PSo16NSObjectProtocol", "Adjective"]
 - ["PSo16NSObjectProtocol", "Dogpic"]
 - ["PSo16NSObjectProtocol", "NSTimer"]
 - ["PSo16NSObjectProtocol", "Noun"]
-- !private ["PSo16NSObjectProtocol", "UIColor"]
 - ["PSo16NSObjectProtocol", "Verb"]
 - ["PSo16NSObjectProtocol", "audioPlayer"]
-- !private ["PSo16NSObjectProtocol", "backgroundColor"]
-- !private ["PSo16NSObjectProtocol", "blueColor"]
 - ["PSo16NSObjectProtocol", "buttonPressed"]
 - ["PSo16NSObjectProtocol", "changeLabel"]
+- ["PSo16NSObjectProtocol", "dogBlinks"]
 - ["PSo16NSObjectProtocol", "gameString"]
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "timer"]
-- !private ["PSo16NSObjectProtocol", "view"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
-- !private ["PSo14NSSecureCoding", "blueColor"]
 - ["CSo7NSTimer", "init"]
 - ["Ps30RangeReplaceableCollectionType", "Element"]
 - ["Ps12SequenceType", "Element"]
-- !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
-- !private ["PSo12UIAppearance", "backgroundColor"]
 - ["PSo21UIAppearanceContainer", "AVAudioPlayer"]
 - ["PSo21UIAppearanceContainer", "Adjective"]
 - ["PSo21UIAppearanceContainer", "Dogpic"]
 - ["PSo21UIAppearanceContainer", "NSTimer"]
 - ["PSo21UIAppearanceContainer", "Noun"]
-- !private ["PSo21UIAppearanceContainer", "UIColor"]
 - ["PSo21UIAppearanceContainer", "Verb"]
 - ["PSo21UIAppearanceContainer", "audioPlayer"]
-- !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - ["PSo21UIAppearanceContainer", "buttonPressed"]
 - ["PSo21UIAppearanceContainer", "changeLabel"]
+- ["PSo21UIAppearanceContainer", "dogBlinks"]
 - ["PSo21UIAppearanceContainer", "gameString"]
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "timer"]
-- !private ["PSo21UIAppearanceContainer", "view"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
-- !private ["CSo7UIColor", "blueColor"]
 - ["PSo18UIContentContainer", "AVAudioPlayer"]
 - ["PSo18UIContentContainer", "Adjective"]
 - ["PSo18UIContentContainer", "Dogpic"]
 - ["PSo18UIContentContainer", "NSTimer"]
 - ["PSo18UIContentContainer", "Noun"]
-- !private ["PSo18UIContentContainer", "UIColor"]
 - ["PSo18UIContentContainer", "Verb"]
 - ["PSo18UIContentContainer", "audioPlayer"]
 - ["PSo18UIContentContainer", "buttonPressed"]
 - ["PSo18UIContentContainer", "changeLabel"]
+- ["PSo18UIContentContainer", "dogBlinks"]
 - ["PSo18UIContentContainer", "gameString"]
 - ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "timer"]
-- !private ["PSo18UIContentContainer", "view"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
-- !private ["PSo17UICoordinateSpace", "backgroundColor"]
-- !private ["PSo13UIDynamicItem", "backgroundColor"]
 - ["PSo18UIFocusEnvironment", "AVAudioPlayer"]
 - ["PSo18UIFocusEnvironment", "Adjective"]
 - ["PSo18UIFocusEnvironment", "Dogpic"]
 - ["PSo18UIFocusEnvironment", "NSTimer"]
 - ["PSo18UIFocusEnvironment", "Noun"]
-- !private ["PSo18UIFocusEnvironment", "UIColor"]
 - ["PSo18UIFocusEnvironment", "Verb"]
 - ["PSo18UIFocusEnvironment", "audioPlayer"]
-- !private ["PSo18UIFocusEnvironment", "backgroundColor"]
 - ["PSo18UIFocusEnvironment", "buttonPressed"]
 - ["PSo18UIFocusEnvironment", "changeLabel"]
+- ["PSo18UIFocusEnvironment", "dogBlinks"]
 - ["PSo18UIFocusEnvironment", "gameString"]
 - ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "timer"]
-- !private ["PSo18UIFocusEnvironment", "view"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
 - ["CSo11UIResponder", "AVAudioPlayer"]
@@ -303,33 +262,30 @@ depends-member:
 - ["CSo11UIResponder", "NSTimer"]
 - ["CSo11UIResponder", "Noun"]
 - ["CSo11UIResponder", "UIButton"]
-- !private ["CSo11UIResponder", "UIColor"]
 - ["CSo11UIResponder", "UIImageView"]
 - ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "Verb"]
 - ["CSo11UIResponder", "audioPlayer"]
-- !private ["CSo11UIResponder", "backgroundColor"]
 - ["CSo11UIResponder", "buttonPressed"]
 - ["CSo11UIResponder", "changeLabel"]
+- ["CSo11UIResponder", "dogBlinks"]
 - ["CSo11UIResponder", "gameString"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "timer"]
-- !private ["CSo11UIResponder", "view"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "AVAudioPlayer"]
 - ["PSo16UIStateRestoring", "Adjective"]
 - ["PSo16UIStateRestoring", "Dogpic"]
 - ["PSo16UIStateRestoring", "NSTimer"]
 - ["PSo16UIStateRestoring", "Noun"]
-- !private ["PSo16UIStateRestoring", "UIColor"]
 - ["PSo16UIStateRestoring", "Verb"]
 - ["PSo16UIStateRestoring", "audioPlayer"]
 - ["PSo16UIStateRestoring", "buttonPressed"]
 - ["PSo16UIStateRestoring", "changeLabel"]
+- ["PSo16UIStateRestoring", "dogBlinks"]
 - ["PSo16UIStateRestoring", "gameString"]
 - ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "timer"]
-- !private ["PSo16UIStateRestoring", "view"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
 - ["PSo18UITraitEnvironment", "AVAudioPlayer"]
@@ -337,44 +293,38 @@ depends-member:
 - ["PSo18UITraitEnvironment", "Dogpic"]
 - ["PSo18UITraitEnvironment", "NSTimer"]
 - ["PSo18UITraitEnvironment", "Noun"]
-- !private ["PSo18UITraitEnvironment", "UIColor"]
 - ["PSo18UITraitEnvironment", "Verb"]
 - ["PSo18UITraitEnvironment", "audioPlayer"]
-- !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - ["PSo18UITraitEnvironment", "buttonPressed"]
 - ["PSo18UITraitEnvironment", "changeLabel"]
+- ["PSo18UITraitEnvironment", "dogBlinks"]
 - ["PSo18UITraitEnvironment", "gameString"]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "timer"]
-- !private ["PSo18UITraitEnvironment", "view"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
-- !private ["CSo6UIView", "backgroundColor"]
 - ["CSo16UIViewController", "AVAudioPlayer"]
 - ["CSo16UIViewController", "Adjective"]
 - ["CSo16UIViewController", "Dogpic"]
 - ["CSo16UIViewController", "NSTimer"]
 - ["CSo16UIViewController", "Noun"]
 - ["CSo16UIViewController", "UIButton"]
-- !private ["CSo16UIViewController", "UIColor"]
 - ["CSo16UIViewController", "UIImageView"]
 - ["CSo16UIViewController", "UILabel"]
 - ["CSo16UIViewController", "Verb"]
 - ["CSo16UIViewController", "audioPlayer"]
 - ["CSo16UIViewController", "buttonPressed"]
 - ["CSo16UIViewController", "changeLabel"]
+- ["CSo16UIViewController", "dogBlinks"]
 - ["CSo16UIViewController", "gameString"]
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "timer"]
-- !private ["CSo16UIViewController", "view"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
 - ["Ps10_ArrayType", "Element"]
-- !private ["Ps24_ColorLiteralConvertible", "blueColor"]
 - ["Ps24_DestructorSafeContainer", "Element"]
 - ["Ps21_ObjectiveCBridgeable", "Element"]
 - ["Ps12_Reflectable", "Element"]
-- !private ["Ps12_Reflectable", "backgroundColor"]
 depends-nominal:
 - "CSo13AVAudioPlayer"
 - "Ps9AnyObject"
@@ -392,29 +342,20 @@ depends-nominal:
 - "Ps16MutableIndexable"
 - "Ps16MutableSliceable"
 - "PSo8NSCoding"
-- !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
-- !private "PSo14NSSecureCoding"
 - "CSo7NSTimer"
 - "Ps30RangeReplaceableCollectionType"
 - "Ps12SequenceType"
-- !private "PSo29UIAccessibilityIdentification"
-- !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
-- !private "CSo7UIColor"
 - "PSo18UIContentContainer"
-- !private "PSo17UICoordinateSpace"
-- !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
 - "CSo11UIResponder"
 - "PSo16UIStateRestoring"
 - "PSo18UITraitEnvironment"
-- !private "CSo6UIView"
 - "CSo16UIViewController"
 - "Ps10_ArrayType"
-- !private "Ps24_ColorLiteralConvertible"
 - "Ps24_DestructorSafeContainer"
 - "Ps21_ObjectiveCBridgeable"
 - "Ps12_Reflectable"
@@ -431,4 +372,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
-interface-hash: "d7fbdc8da4d209b73f2a1c966e7de86d"
+interface-hash: "a948a625647ee80bc8a1ed8b9e7f8768"

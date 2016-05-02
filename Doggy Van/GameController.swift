@@ -66,10 +66,12 @@ class GameController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view!.backgroundColor = UIColor.blueColor()
+  //      self.view!.backgroundColor = UIColor.blueColor()
   //      UIView.animateWithDuration(0.2, animations: <#T##() -> Void#>)
     }
     
+    
+    func dogBlinks() {
     // Animation of dog throughout the game. Smart object moves while the game is active.
     
 
@@ -80,4 +82,4 @@ class GameController: UIViewController {
         
         
 
-
+}

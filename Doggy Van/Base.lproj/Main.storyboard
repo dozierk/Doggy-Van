@@ -51,7 +51,7 @@
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g3x-Ki-Sah"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dogpic1" translatesAutoresizingMaskIntoConstraints="NO" id="iHQ-LZ-TBc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dogtailright1" translatesAutoresizingMaskIntoConstraints="NO" id="iHQ-LZ-TBc">
                                 <rect key="frame" x="20" y="143" width="240" height="194"/>
                             </imageView>
                         </subviews>
@@ -68,6 +68,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="dogpic1" width="341" height="341"/>
+        <image name="Dogtailright1" width="341" height="341"/>
     </resources>
 </document>
