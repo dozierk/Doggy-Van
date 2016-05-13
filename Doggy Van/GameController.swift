@@ -11,40 +11,50 @@ import AVFoundation
 
 
 class GameController: UIViewController {
-
-
-    @IBOutlet weak var Dogpic: UIImageView!
     
-    @IBOutlet weak var changeLabel: UILabel!
     
-    var timer = NSTimer()
+    @IBOutlet weak var imageView: UIImageView!
     
-//    if counter == 5 {
-//    
-//        counter = 1
-//    
-//    } else {
-//    
-//        counter ++
-//    
-//    }
-//    
-    var audioPlayer = AVAudioPlayer()
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+  //    let dogpic1 = UIImage(named: "dogpic1")
+        
+        
+        imageView.animationImages = [
+            
+  //        UIImage(named: "dogpic1")!,
+            UIImage(named: "Dogeyeclose1")!,
+            UIImage(named: "Dogtailleft1")!,
+            UIImage(named: "Dogtailright1")!
+        ]
+        
+        imageView.animationDuration = 0.7
+        imageView.startAnimating()
+    }
+    
+    
+    
+    
+    
+    
+    //
+    //    var audioPlayer = AVAudioPlayer()
     
     var gameString = ["dance", "eat", "drive", "run", "play", "sing", "sleep", "imagine", "beautiful", "laughing", "smiling", "crying", "jumping", "dolphin", "cat", "apple", "tree", "bird"]
     
-//    var answerCorrect = answerCorrect.changeLabel()
+    //    var answerCorrect = answerCorrect.changeLabel()
     
     
-  //  label.text = gameString[0]
+    //  label.text = gameString[0]
     
-  //  let gameString
+    //  let gameString
     
-  //  myStrings.first
+    //  myStrings.first
     
     
-
-
+    
+    
     // The verb, adjective, and noun are the only options that could pertain to the label.
     
     @IBAction func Verb(sender: UIButton) {
@@ -52,34 +62,33 @@ class GameController: UIViewController {
     }
     
     @IBAction func Adjective(sender: UIButton) {
-    
+        
     }
-
+    
     @IBAction func Noun(sender: UIButton) {
         
     }
- 
+    
     // When the next button is pressed, the text in the label will change.
     @IBAction func buttonPressed(sender: UIButton) {
-//        changeLabel.text = "dance", "eat", "drive", "run", "play", "sing", "sleep", "imagine", "beautiful", "laughing", "smiling", "crying", "jumping", "dolphin", "cat", "apple", "tree", "bird"
-    }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-  //      self.view!.backgroundColor = UIColor.blueColor()
-  //      UIView.animateWithDuration(0.2, animations: <#T##() -> Void#>)
+    //  changeLabel.text = "dance", "eat", "drive", "run", "play", "sing", "sleep", "imagine", "beautiful", "laughing", "smiling", "crying", "jumping", "dolphin", "cat", "apple", "tree", "bird"
     }
     
-    
-    func dogBlinks() {
-    // Animation of dog throughout the game. Smart object moves while the game is active.
-    
-
-    }
-    // Override to allow for dragging the button.
-    // override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
-    //    super.touchesMoved(touches, withEvent: event)
-        
-        
-
+    //override func viewDidLoad() {
+    //    super.viewDidLoad()
+    //    self.view!.backgroundColor = UIColor.blueColor()
+    //
 }
+
+
+
+//    }
+//     Override to allow for dragging the button.
+//     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+//        super.touchesMoved(touches, withEvent: event)
+//
+//
+//
+//}
+
