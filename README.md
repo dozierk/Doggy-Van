@@ -2,7 +2,6 @@
 
 Van is an acronym for verb, adjective, and noun. 
 
-<<<<<<< .merge_file_8y2UuK
 I had an idea for a game but also an educational tool so I decided to create an app that encompasses both components.
 
 How to play:
@@ -14,7 +13,7 @@ The user will click on which option they think is correct.
 If they choose correctly, the background will flash green.
 
 If they choose incorrectly, the background will flash red.
-=======
+
 I had an idea for a game, but also an educational tool so I decided to create an app that encompasses both components.
 
 How to play:
