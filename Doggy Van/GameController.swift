@@ -17,8 +17,7 @@ class GameController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-  //    let dogpic1 = UIImage(named: "dogpic1")
+        self.view!.backgroundColor = UIColor.whiteColor()
         
         
         imageView.animationImages = [
@@ -34,14 +33,9 @@ class GameController: UIViewController {
     }
     
     
-    
-    
-    
-    
     //
     //    var audioPlayer = AVAudioPlayer()
     
-    var gameString = ["dance", "eat", "drive", "run", "play", "sing", "sleep", "imagine", "beautiful", "laughing", "smiling", "crying", "jumping", "dolphin", "cat", "apple", "tree", "bird"]
     
     //    var answerCorrect = answerCorrect.changeLabel()
     
@@ -53,34 +47,45 @@ class GameController: UIViewController {
     //  myStrings.first
     
     
-    
-    
     // The verb, adjective, and noun are the only options that could pertain to the label.
+    @IBOutlet weak var changeLabel: UILabel!
+    
     
     @IBAction func Verb(sender: UIButton) {
+        
+//        dance, sing, eat, jump, sleep, play, scream, slide, bounce, carry
         
     }
     
     @IBAction func Adjective(sender: UIButton) {
         
+//        small, long, last, angry, big, fast, quiet, loud, wet, empty
+        
     }
     
     @IBAction func Noun(sender: UIButton) {
         
+//        cat, dog, ball, dress, balloon, book, boy, girl, airplane, apple
     }
     
-    // When the next button is pressed, the text in the label will change.
+    // When the next button is pressed, the text in the UIlabel will change.
     @IBAction func buttonPressed(sender: UIButton) {
+        
+       var changeLabel = ["Dance", "Small", "Balloon", "Dress", "Big", "Loud", "Slide", "Bounce", "Book", "Airplane", "Quiet", "Ball", "Empty", "Cat", "Dog", "Angry", "Scream", "Last", "Fast", "Eat", "Long", "Jump", "Apple", "Sleep", "Play", "Wet", "Carry", "Girl", "Boy", "Sing"]
+        
+        var firstItem = changeLabel[0]
+        var secondItem = changeLabel[1]
 
-    //  changeLabel.text = "dance", "eat", "drive", "run", "play", "sing", "sleep", "imagine", "beautiful", "laughing", "smiling", "crying", "jumping", "dolphin", "cat", "apple", "tree", "bird"
-    }
+        
+        print("The list contains \(changeLabel.count) 30 words.")
+        // Prints "The shopping list contains 2 items."
+        
+//        for (index, value) in changeLabel.enumerate() {
+//            print("Item \(index + 1): \(value)")
+//        }
     
-    //override func viewDidLoad() {
-    //    super.viewDidLoad()
-    //    self.view!.backgroundColor = UIColor.blueColor()
-    //
-}
-
+//    var stringToDisplay: String = listOfWords.componentsJoinedByString("\n")
+//    wordList.text = stringToDisplay
 
 
 //    }
@@ -92,3 +97,8 @@ class GameController: UIViewController {
 //
 //}
 
+
+    }
+
+
+}

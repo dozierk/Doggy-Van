@@ -1,11 +1,18 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "GameController"
+<<<<<<< HEAD
+=======
+- "Verb"
+- "Adjective"
+- "Noun"
+>>>>>>> ab86db9682540569f278e494832bce5cd774470b
 provides-nominal:
 - "C9Doggy_Van14GameController"
 provides-member:
 - ["C9Doggy_Van14GameController", ""]
 provides-dynamic-lookup:
+<<<<<<< HEAD
 - "audioPlayer"
 - "Verb"
 - "timer"
@@ -163,11 +170,72 @@ depends-member:
 - ["Ps8Hashable", "timer"]
 - !private ["Ps8Hashable", "valueForKey"]
 - ["Ps8Hashable", "viewDidLoad"]
+=======
+- "Doggy"
+- "gameString"
+- "changeLabel"
+depends-top-level:
+- !private "AVAudioPlayer"
+- "Adjective"
+- "Array"
+- "UIImageView"
+- "UIViewController"
+- "Noun"
+- "StringLiteralType"
+- "Verb"
+- "UIButton"
+- "UILabel"
+- "GameController"
+depends-member:
+- !private ["CSo13AVAudioPlayer", "deinit"]
+- !private ["CSo13AVAudioPlayer", "valueForKey"]
+- ["Ps9AnyObject", "Doggy"]
+- ["Ps9AnyObject", "changeLabel"]
+- ["Ps9AnyObject", "gameString"]
+- !private ["Ps9AnyObject", "valueForKey"]
+- ["Ps9AnyObject", ""]
+- ["Sa", "Element"]
+- ["Ps23ArrayLiteralConvertible", "Element"]
+- ["Ps11CVarArgType", "Doggy"]
+- ["Ps11CVarArgType", "changeLabel"]
+- ["Ps11CVarArgType", "gameString"]
+- !private ["Ps11CVarArgType", "valueForKey"]
+- ["Ps11CVarArgType", ""]
+- ["Ps14CollectionType", "Element"]
+- ["Ps28CustomDebugStringConvertible", "Doggy"]
+- ["Ps28CustomDebugStringConvertible", "Element"]
+- ["Ps28CustomDebugStringConvertible", "changeLabel"]
+- ["Ps28CustomDebugStringConvertible", "gameString"]
+- !private ["Ps28CustomDebugStringConvertible", "valueForKey"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "Doggy"]
+- ["Ps23CustomStringConvertible", "Element"]
+- ["Ps23CustomStringConvertible", "changeLabel"]
+- ["Ps23CustomStringConvertible", "gameString"]
+- !private ["Ps23CustomStringConvertible", "valueForKey"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "Doggy"]
+- ["Ps9Equatable", "changeLabel"]
+- ["Ps9Equatable", "gameString"]
+- !private ["Ps9Equatable", "valueForKey"]
+- ["Ps9Equatable", ""]
+- ["C9Doggy_Van14GameController", "Doggy"]
+- ["C9Doggy_Van14GameController", "UIImageView"]
+- ["C9Doggy_Van14GameController", "UILabel"]
+- ["C9Doggy_Van14GameController", "changeLabel"]
+- ["C9Doggy_Van14GameController", "deinit"]
+- ["C9Doggy_Van14GameController", "gameString"]
+- ["Ps8Hashable", "Doggy"]
+- ["Ps8Hashable", "changeLabel"]
+- ["Ps8Hashable", "gameString"]
+- !private ["Ps8Hashable", "valueForKey"]
+>>>>>>> ab86db9682540569f278e494832bce5cd774470b
 - ["Ps8Hashable", ""]
 - ["Ps9Indexable", "Element"]
 - ["Ps21MutableCollectionType", "Element"]
 - ["Ps16MutableIndexable", "Element"]
 - ["Ps16MutableSliceable", "Element"]
+<<<<<<< HEAD
 - ["PSo8NSCoding", "AVAudioPlayer"]
 - ["PSo8NSCoding", "Adjective"]
 - ["PSo8NSCoding", "Doggy"]
@@ -366,14 +434,73 @@ depends-member:
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+=======
+- ["PSo8NSCoding", "Doggy"]
+- ["PSo8NSCoding", "changeLabel"]
+- ["PSo8NSCoding", "gameString"]
+- ["PSo8NSCoding", ""]
+- ["PSo26NSExtensionRequestHandling", "Doggy"]
+- ["PSo26NSExtensionRequestHandling", "changeLabel"]
+- ["PSo26NSExtensionRequestHandling", "gameString"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "Doggy"]
+- ["CSo8NSObject", "UIImageView"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "changeLabel"]
+- ["CSo8NSObject", "gameString"]
+- !private ["CSo8NSObject", "valueForKey"]
+- ["PSo16NSObjectProtocol", "Doggy"]
+- ["PSo16NSObjectProtocol", "changeLabel"]
+- ["PSo16NSObjectProtocol", "gameString"]
+- !private ["PSo16NSObjectProtocol", "valueForKey"]
+- ["PSo16NSObjectProtocol", ""]
+- ["Ps30RangeReplaceableCollectionType", "Element"]
+- ["Ps12SequenceType", "Element"]
+- ["PSo21UIAppearanceContainer", "Doggy"]
+- ["PSo21UIAppearanceContainer", "changeLabel"]
+- ["PSo21UIAppearanceContainer", "gameString"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo18UIContentContainer", "Doggy"]
+- ["PSo18UIContentContainer", "changeLabel"]
+- ["PSo18UIContentContainer", "gameString"]
+- ["PSo18UIContentContainer", ""]
+- ["PSo18UIFocusEnvironment", "Doggy"]
+- ["PSo18UIFocusEnvironment", "changeLabel"]
+- ["PSo18UIFocusEnvironment", "gameString"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["CSo11UIResponder", "Doggy"]
+- ["CSo11UIResponder", "UIImageView"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "changeLabel"]
+- ["CSo11UIResponder", "gameString"]
+- ["PSo16UIStateRestoring", "Doggy"]
+- ["PSo16UIStateRestoring", "changeLabel"]
+- ["PSo16UIStateRestoring", "gameString"]
+- ["PSo16UIStateRestoring", ""]
+- ["PSo18UITraitEnvironment", "Doggy"]
+- ["PSo18UITraitEnvironment", "changeLabel"]
+- ["PSo18UITraitEnvironment", "gameString"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo16UIViewController", "Doggy"]
+- ["CSo16UIViewController", "UIImageView"]
+- ["CSo16UIViewController", "UILabel"]
+- ["CSo16UIViewController", "changeLabel"]
+- ["CSo16UIViewController", "gameString"]
+- ["CSo16UIViewController", ""]
+>>>>>>> ab86db9682540569f278e494832bce5cd774470b
 - ["Ps10_ArrayType", "Element"]
 - ["Ps24_DestructorSafeContainer", "Element"]
 - ["Ps21_ObjectiveCBridgeable", "Element"]
 - ["Ps12_Reflectable", "Element"]
+<<<<<<< HEAD
 - !private ["Ps12_Reflectable", "init"]
 - !private ["Ps12_Reflectable", "text"]
 depends-nominal:
 - "CSo13AVAudioPlayer"
+=======
+depends-nominal:
+- !private "CSo13AVAudioPlayer"
+>>>>>>> ab86db9682540569f278e494832bce5cd774470b
 - "Ps9AnyObject"
 - "Sa"
 - "Ps23ArrayLiteralConvertible"
@@ -382,7 +509,10 @@ depends-nominal:
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
+<<<<<<< HEAD
 - !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+=======
+>>>>>>> ab86db9682540569f278e494832bce5cd774470b
 - "C9Doggy_Van14GameController"
 - "Ps8Hashable"
 - "Ps9Indexable"
@@ -393,6 +523,7 @@ depends-nominal:
 - "PSo26NSExtensionRequestHandling"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+<<<<<<< HEAD
 - "CSo7NSTimer"
 - !private "Ps21NilLiteralConvertible"
 - !private "Sq"
@@ -414,6 +545,17 @@ depends-nominal:
 - !private "CSo6UIView"
 - "CSo16UIViewController"
 - !private "Ps31UnicodeScalarLiteralConvertible"
+=======
+- "Ps30RangeReplaceableCollectionType"
+- "Ps12SequenceType"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- "PSo18UIFocusEnvironment"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- "CSo16UIViewController"
+>>>>>>> ab86db9682540569f278e494832bce5cd774470b
 - "Ps10_ArrayType"
 - "Ps24_DestructorSafeContainer"
 - "Ps21_ObjectiveCBridgeable"
@@ -431,4 +573,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+<<<<<<< HEAD
 interface-hash: "cc00ca579359e02103d959547959d3fb"
+=======
+interface-hash: "01ef33082f8fd9cffb08de6d6edabb7f"
+>>>>>>> ab86db9682540569f278e494832bce5cd774470b

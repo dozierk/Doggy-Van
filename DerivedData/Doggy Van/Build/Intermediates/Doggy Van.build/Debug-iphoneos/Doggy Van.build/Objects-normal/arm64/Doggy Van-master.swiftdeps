@@ -1,7 +1,16 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
+<<<<<<< HEAD
 options: "a8e740548ddf7b764a411163ca779098"
 build_time: [514942640, 573252000]
 inputs:
   "/Applications/App Folder/Doggy Van/Doggy Van/GameController.swift": !private [514935209, 0]
   "/Applications/App Folder/Doggy Van/Doggy Van/Animation.swift": !private [513638727, 0]
   "/Applications/App Folder/Doggy Van/Doggy Van/AppDelegate.swift": !dirty [508651078, 0]
+=======
+options: "5f829e80021fc778ec6a662313f3134e"
+build_time: [512876327, 355867000]
+inputs:
+  "/Users/kaylad/Doggy-Van/Doggy Van/GameController.swift": !dirty [512710698, 0]
+  "/Users/kaylad/Doggy-Van/Doggy Van/Animation.swift": !dirty [512710698, 0]
+  "/Users/kaylad/Doggy-Van/Doggy Van/AppDelegate.swift": !dirty [512710698, 0]
+>>>>>>> ab86db9682540569f278e494832bce5cd774470b
