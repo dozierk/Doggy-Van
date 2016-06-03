@@ -33,18 +33,7 @@ class GameController: UIViewController {
     }
     
     
-    //
-    //    var audioPlayer = AVAudioPlayer()
-    
-    
     //    var answerCorrect = answerCorrect.changeLabel()
-    
-    
-    //  label.text = gameString[0]
-    
-    //  let gameString
-    
-    //  myStrings.first
     
     
     // The verb, adjective, and noun are the only options that could pertain to the label.
@@ -65,7 +54,7 @@ class GameController: UIViewController {
     
     @IBAction func Noun(sender: UIButton) {
         
-//        cat, dog, ball, dress, balloon, book, boy, girl, airplane, apple
+//        changeLabel.text = "Cat", "Dog", "Ball", "Dress", "Balloon", "Book", "Boy", "Girl", "Airplane", "Apple"
     }
     
     // When the next button is pressed, the text in the UIlabel will change.
@@ -92,8 +81,6 @@ class GameController: UIViewController {
 //     Override to allow for dragging the button.
 //     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
 //        super.touchesMoved(touches, withEvent: event)
-//
-//
 //
 //}
 

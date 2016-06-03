@@ -18,6 +18,7 @@
 		E9B37D451C8BE227007EDAA7 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B37D441C8BE227007EDAA7 /* MediaPlayer.framework */; };
 		E9B37D471C8BE22E007EDAA7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B37D461C8BE22E007EDAA7 /* CoreGraphics.framework */; };
 		E9B37D571C8E9DCA007EDAA7 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B37D561C8E9DCA007EDAA7 /* Animation.swift */; };
+		E9F8D9221CF3F16E0010A1C6 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F8D9211CF3F16E0010A1C6 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		E9B37D441C8BE227007EDAA7 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		E9B37D461C8BE22E007EDAA7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E9B37D561C8E9DCA007EDAA7 /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		E9F8D9201CF3F1540010A1C6 /* Doggy Van.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Doggy Van.entitlements"; sourceTree = "<group>"; };
+		E9F8D9211CF3F16E0010A1C6 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9B37D471C8BE22E007EDAA7 /* CoreGraphics.framework in Frameworks */,
+				E9F8D9221CF3F16E0010A1C6 /* CloudKit.framework in Frameworks */,
 				E9B37D451C8BE227007EDAA7 /* MediaPlayer.framework in Frameworks */,
 				E92BCCB71C6EE197009A220A /* AVFoundation.framework in Frameworks */,
 			);
@@ -109,6 +113,7 @@
 		E92BCC871C6EE146009A220A /* Doggy Van */ = {
 			isa = PBXGroup;
 			children = (
+				E9F8D9201CF3F1540010A1C6 /* Doggy Van.entitlements */,
 				E92BCC881C6EE146009A220A /* AppDelegate.swift */,
 				E92BCC8A1C6EE146009A220A /* GameController.swift */,
 				E9B37D561C8E9DCA007EDAA7 /* Animation.swift */,
@@ -141,6 +146,7 @@
 		E9B37D481C8BE23C007EDAA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E9F8D9211CF3F16E0010A1C6 /* CloudKit.framework */,
 				E92BCCB61C6EE197009A220A /* AVFoundation.framework */,
 				E9B37D441C8BE227007EDAA7 /* MediaPlayer.framework */,
 				E9B37D461C8BE22E007EDAA7 /* CoreGraphics.framework */,
@@ -216,6 +222,12 @@
 				TargetAttributes = {
 					E92BCC841C6EE146009A220A = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 9E7L5UG4MY;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					E92BCC981C6EE146009A220A = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -423,6 +435,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Doggy Van/Doggy Van.entitlements";
 				INFOPLIST_FILE = "Doggy Van/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Kayla-s-Computer.Doggy-Van";
@@ -435,6 +448,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Doggy Van/Doggy Van.entitlements";
 				INFOPLIST_FILE = "Doggy Van/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Kayla-s-Computer.Doggy-Van";
