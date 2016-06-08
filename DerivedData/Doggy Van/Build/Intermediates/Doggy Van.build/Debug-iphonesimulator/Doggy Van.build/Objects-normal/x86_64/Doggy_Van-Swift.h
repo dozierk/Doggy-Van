@@ -121,6 +121,9 @@ SWIFT_CLASS("_TtC9Doggy_Van11AppDelegate")
 
 SWIFT_CLASS("_TtC9Doggy_Van14GameController")
 @interface GameController : UIViewController
+
+/// Tracks the index of the global Array we're using as a Model Object. * * Functional: Whenever the index is changed, the label text is updated to reflect it.
+@property (nonatomic) NSInteger currentWordIndex;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageView;
 - (void)viewDidLoad;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified changeLabel;

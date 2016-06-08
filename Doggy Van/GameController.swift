@@ -13,6 +13,18 @@ import AVFoundation
 class GameController: UIViewController {
     
     
+    /** Tracks the index of the global Array we're using as a Model Object.
+     *
+     * Functional: Whenever the index is changed, the label text is updated to reflect it.
+     */
+    var currentWordIndex = 0 {
+        willSet {
+//            changeLabel.text = words[newValue]
+        }
+    }
+
+    
+    
     @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
@@ -42,6 +54,8 @@ class GameController: UIViewController {
     
     @IBAction func Verb(sender: UIButton) {
         
+//        changeLabel.text
+        
 //        dance, sing, eat, jump, sleep, play, scream, slide, bounce, carry
         
     }
@@ -64,6 +78,10 @@ class GameController: UIViewController {
         
         var firstItem = changeLabel[0]
         var secondItem = changeLabel[1]
+        
+        // Increments the index that we're referencing in the global Array constant.  Modulo/Remainder is set for the total amount in the Array so the index will never go out of range, it will just go back to 0 and continue incrementing.
+//        currentWordIndex = (currentWordIndex + 1) % words.count
+
 
         
         print("The list contains \(changeLabel.count) 30 words.")

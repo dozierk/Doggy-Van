@@ -6,24 +6,25 @@ provides-nominal:
 provides-member:
 - ["C9Doggy_Van14GameController", ""]
 provides-dynamic-lookup:
-- "Noun"
+- "Verb"
 - "viewDidLoad"
-- "changeLabel"
 - "buttonPressed"
 - "imageView"
+- "currentWordIndex"
+- "changeLabel"
+- "Noun"
 - "Adjective"
-- "Verb"
 depends-top-level:
-- !private "StringLiteralType"
-- !private "UIImage"
-- "UIViewController"
-- "UIButton"
-- "GameController"
 - !private "print"
 - !private "UIColor"
-- !private "Array"
-- "UIImageView"
+- !private "StringLiteralType"
 - "UILabel"
+- "UIImageView"
+- "UIViewController"
+- !private "UIImage"
+- !private "Array"
+- "GameController"
+- "UIButton"
 depends-member:
 - ["Ps9AnyObject", "Adjective"]
 - ["Ps9AnyObject", "Noun"]
@@ -35,6 +36,7 @@ depends-member:
 - !private ["Ps9AnyObject", "backgroundColor"]
 - ["Ps9AnyObject", "buttonPressed"]
 - ["Ps9AnyObject", "changeLabel"]
+- ["Ps9AnyObject", "currentWordIndex"]
 - ["Ps9AnyObject", "imageView"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "print"]
@@ -74,6 +76,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "backgroundColor"]
 - ["Ps11CVarArgType", "buttonPressed"]
 - ["Ps11CVarArgType", "changeLabel"]
+- ["Ps11CVarArgType", "currentWordIndex"]
 - ["Ps11CVarArgType", "imageView"]
 - ["Ps11CVarArgType", "init"]
 - !private ["Ps11CVarArgType", "print"]
@@ -108,6 +111,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "buttonPressed"]
 - ["Ps28CustomDebugStringConvertible", "changeLabel"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
+- ["Ps28CustomDebugStringConvertible", "currentWordIndex"]
 - ["Ps28CustomDebugStringConvertible", "imageView"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
@@ -134,6 +138,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "buttonPressed"]
 - ["Ps23CustomStringConvertible", "changeLabel"]
 - !private ["Ps23CustomStringConvertible", "count"]
+- ["Ps23CustomStringConvertible", "currentWordIndex"]
 - ["Ps23CustomStringConvertible", "imageView"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "print"]
@@ -156,6 +161,7 @@ depends-member:
 - !private ["Ps9Equatable", "backgroundColor"]
 - ["Ps9Equatable", "buttonPressed"]
 - ["Ps9Equatable", "changeLabel"]
+- ["Ps9Equatable", "currentWordIndex"]
 - ["Ps9Equatable", "imageView"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "print"]
@@ -178,6 +184,7 @@ depends-member:
 - ["C9Doggy_Van14GameController", "Verb"]
 - ["C9Doggy_Van14GameController", "buttonPressed"]
 - ["C9Doggy_Van14GameController", "changeLabel"]
+- ["C9Doggy_Van14GameController", "currentWordIndex"]
 - ["C9Doggy_Van14GameController", "deinit"]
 - ["C9Doggy_Van14GameController", "imageView"]
 - ["C9Doggy_Van14GameController", "init"]
@@ -197,6 +204,7 @@ depends-member:
 - !private ["Ps8Hashable", "backgroundColor"]
 - ["Ps8Hashable", "buttonPressed"]
 - ["Ps8Hashable", "changeLabel"]
+- ["Ps8Hashable", "currentWordIndex"]
 - ["Ps8Hashable", "imageView"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "print"]
@@ -257,6 +265,7 @@ depends-member:
 - !private ["PSo8NSCoding", "backgroundColor"]
 - ["PSo8NSCoding", "buttonPressed"]
 - ["PSo8NSCoding", "changeLabel"]
+- ["PSo8NSCoding", "currentWordIndex"]
 - ["PSo8NSCoding", "imageView"]
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "print"]
@@ -274,6 +283,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "Verb"]
 - ["PSo26NSExtensionRequestHandling", "buttonPressed"]
 - ["PSo26NSExtensionRequestHandling", "changeLabel"]
+- ["PSo26NSExtensionRequestHandling", "currentWordIndex"]
 - ["PSo26NSExtensionRequestHandling", "imageView"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
@@ -294,6 +304,7 @@ depends-member:
 - !private ["CSo8NSObject", "backgroundColor"]
 - ["CSo8NSObject", "buttonPressed"]
 - ["CSo8NSObject", "changeLabel"]
+- ["CSo8NSObject", "currentWordIndex"]
 - ["CSo8NSObject", "imageView"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "print"]
@@ -311,6 +322,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - ["PSo16NSObjectProtocol", "buttonPressed"]
 - ["PSo16NSObjectProtocol", "changeLabel"]
+- ["PSo16NSObjectProtocol", "currentWordIndex"]
 - ["PSo16NSObjectProtocol", "imageView"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "print"]
@@ -373,6 +385,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - ["PSo21UIAppearanceContainer", "buttonPressed"]
 - ["PSo21UIAppearanceContainer", "changeLabel"]
+- ["PSo21UIAppearanceContainer", "currentWordIndex"]
 - ["PSo21UIAppearanceContainer", "imageView"]
 - ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "print"]
@@ -388,6 +401,7 @@ depends-member:
 - ["PSo18UIContentContainer", "Verb"]
 - ["PSo18UIContentContainer", "buttonPressed"]
 - ["PSo18UIContentContainer", "changeLabel"]
+- ["PSo18UIContentContainer", "currentWordIndex"]
 - ["PSo18UIContentContainer", "imageView"]
 - ["PSo18UIContentContainer", "init"]
 - !private ["PSo18UIContentContainer", "print"]
@@ -412,6 +426,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
 - ["PSo18UIFocusEnvironment", "buttonPressed"]
 - ["PSo18UIFocusEnvironment", "changeLabel"]
+- ["PSo18UIFocusEnvironment", "currentWordIndex"]
 - ["PSo18UIFocusEnvironment", "imageView"]
 - ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "print"]
@@ -436,6 +451,7 @@ depends-member:
 - !private ["CSo11UIResponder", "backgroundColor"]
 - ["CSo11UIResponder", "buttonPressed"]
 - ["CSo11UIResponder", "changeLabel"]
+- ["CSo11UIResponder", "currentWordIndex"]
 - ["CSo11UIResponder", "imageView"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "print"]
@@ -449,6 +465,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "Verb"]
 - ["PSo16UIStateRestoring", "buttonPressed"]
 - ["PSo16UIStateRestoring", "changeLabel"]
+- ["PSo16UIStateRestoring", "currentWordIndex"]
 - ["PSo16UIStateRestoring", "imageView"]
 - ["PSo16UIStateRestoring", "init"]
 - !private ["PSo16UIStateRestoring", "print"]
@@ -465,6 +482,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - ["PSo18UITraitEnvironment", "buttonPressed"]
 - ["PSo18UITraitEnvironment", "changeLabel"]
+- ["PSo18UITraitEnvironment", "currentWordIndex"]
 - ["PSo18UITraitEnvironment", "imageView"]
 - ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "print"]
@@ -486,6 +504,7 @@ depends-member:
 - ["CSo16UIViewController", "Verb"]
 - ["CSo16UIViewController", "buttonPressed"]
 - ["CSo16UIViewController", "changeLabel"]
+- ["CSo16UIViewController", "currentWordIndex"]
 - ["CSo16UIViewController", "imageView"]
 - ["CSo16UIViewController", "init"]
 - !private ["CSo16UIViewController", "print"]
@@ -659,4 +678,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
-interface-hash: "88edd1f3b86117dfd9186fa3b3ea7ff3"
+interface-hash: "a3d862636b88c70937726c421200d829"

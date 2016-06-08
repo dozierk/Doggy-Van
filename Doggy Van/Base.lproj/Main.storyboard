@@ -17,49 +17,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjO-dk-Zg3">
-                                <rect key="frame" x="508" y="139" width="72" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOW-we-eks">
-                                <rect key="frame" x="506" y="192" width="77" height="30"/>
-                                <state key="normal" title="Verb"/>
-                                <connections>
-                                    <action selector="Verb:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o2F-tB-K5G"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lnb-kD-Nj5">
-                                <rect key="frame" x="503" y="245" width="77" height="30"/>
-                                <state key="normal" title="Adjective"/>
-                                <connections>
-                                    <action selector="Adjective:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bjd-TQ-udv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hut-Ab-yE7">
-                                <rect key="frame" x="503" y="295" width="77" height="42"/>
-                                <state key="normal" title="Noun"/>
-                                <connections>
-                                    <action selector="Noun:" destination="BYZ-38-t0r" eventType="touchUpInside" id="peP-9Y-TPN"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="kd4-3I-Hgy">
+                                <rect key="frame" x="494" y="124" width="79" height="261"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="15" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjO-dk-Zg3">
+                                        <rect key="frame" x="0.0" y="0.0" width="79" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="15" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOW-we-eks">
+                                        <rect key="frame" x="0.0" y="51" width="79" height="30"/>
+                                        <state key="normal" title="VERB"/>
+                                        <connections>
+                                            <action selector="Verb:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o2F-tB-K5G"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="15" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lnb-kD-Nj5">
+                                        <rect key="frame" x="0.0" y="111" width="79" height="30"/>
+                                        <state key="normal" title="ADJECTIVE"/>
+                                        <connections>
+                                            <action selector="Adjective:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bjd-TQ-udv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="15" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hut-Ab-yE7">
+                                        <rect key="frame" x="0.0" y="171" width="79" height="30"/>
+                                        <state key="normal" title="NOUN"/>
+                                        <connections>
+                                            <action selector="Noun:" destination="BYZ-38-t0r" eventType="touchUpInside" id="peP-9Y-TPN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="15" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZA-Pm-xaQ">
+                                        <rect key="frame" x="0.0" y="231" width="79" height="30"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="NEXT">
+                                            <color key="titleColor" red="0.36699593529153651" green="0.56788168443322307" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g3x-Ki-Sah"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dogpic1" translatesAutoresizingMaskIntoConstraints="NO" id="Fic-ws-McS">
-                                <rect key="frame" x="0.0" y="156" width="240" height="208"/>
+                                <rect key="frame" x="9" y="151" width="240" height="208"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZA-Pm-xaQ">
-                                <rect key="frame" x="528" y="340" width="32" height="30"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" red="0.36699593529153651" green="0.56788168443322307" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g3x-Ki-Sah"/>
-                                </connections>
-                            </button>
                         </subviews>
+                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="5Q5-qR-ae8"/>
                     <connections>
