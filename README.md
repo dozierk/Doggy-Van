@@ -16,6 +16,6 @@ If they choose correctly, the background will flash green.
 If they choose incorrectly, the background will flash red.
 
 
-This game makes use of basic animation and use of AVFoundation framework. Also creates the need for a custom dictionary that implements the words in a different order every time the game is launched.  
+This game makes use of basic animation and use of AVFoundation framework. Also creates the need for arrays and functions. 
 
 
