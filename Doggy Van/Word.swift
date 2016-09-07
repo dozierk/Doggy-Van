@@ -2,7 +2,7 @@
 //  Word.swift
 //  Doggy Van
 //
-//  Created by Dwayne Langley on 6/6/16.
+//  Created by Kayla Dozier on 6/6/16.
 //  Copyright © 2016 kayla dozier. All rights reserved.
 //
 
@@ -30,6 +30,7 @@ class Noun: Word {
     override init(string: String) {
         super.init(string: string)
         type = "noun"
+        isNoun = true
     }
 }
 
@@ -47,5 +48,6 @@ class Adjective: Word {
     override init(string: String) {
         super.init(string: string)
         type = "adjective"
+        isAdjective = true
     }
 }
