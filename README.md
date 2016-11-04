@@ -11,11 +11,10 @@ The word will change but the key is knowing whether or not the word is a verb, a
 
 The user will click on which option they think is correct.
 
-If they choose correctly, the background will flash green.
+If they choose correctly, the word CORRECT will show in the top left of the screen.
 
-If they choose incorrectly, the background will flash red.
+If they choose incorrectly, the word INCORRECT will show in the top right of the screen.
 
-
-This game makes use of basic animation and use of AVFoundation framework. Also creates the need for arrays and functions. 
+This game makes use of basic flip page animation and the MVC design pattern. Implemented for loops, extensions, and a temporary dictionary which I plan to replace with a third party library at a later time.  
 
 
