@@ -15,6 +15,6 @@ If they choose correctly, the word CORRECT will show in the top left of the scre
 
 If they choose incorrectly, the word INCORRECT will show in the top right of the screen.
 
-This game makes use of basic flip page animation and the MVC design pattern. Implemented for loops, extensions, and a temporary dictionary which I plan to replace with a third party library at a later time.  
+This game makes use of basic flip page animation and the MVC design pattern. Implemented  extensions, and a temporary custom dictionary which will be replaced with a third party library at a later time.  
 
 
