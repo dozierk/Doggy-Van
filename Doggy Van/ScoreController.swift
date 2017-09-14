@@ -11,6 +11,7 @@ import GameKit
 
 class ScoreController: UIViewController {
     
+    //Plans to implement GameCenter and leaderboards at a later time. 
 
     override func viewDidLoad() {
         super.viewDidLoad()

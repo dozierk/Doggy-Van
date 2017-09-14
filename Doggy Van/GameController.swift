@@ -50,8 +50,11 @@ class GameController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        currentWordIndex = 0
-         words = Source.getWords(amount: 30)
+        Source.grab(amount: 30) { (results) in
+            DispatchQueue.main.async {
+                self.words = results
+            }
+        }
     }
     
     
@@ -72,20 +75,31 @@ class GameController: UIViewController {
     
     
     /** Local array of words (temporarily) being used as a source for the Test. */
-    var words = Source.getWords(amount: 30)
+    var words = [Word]() {
+        didSet {
+            guard words.count > 0 else {
+                print("Just the words initializer.")
+                return
+            }
+            
+            currentWordIndex = 0
+        }
+    }
     
     /** Tracks the index of the global Array used as a Model Object.
      *
      * Functional: Whenever the index is changed, the label text is updated to reflect it.
      */
-    var currentWordIndex = 0 {
-        
-        willSet {
+
+   //Finish algorithms for returning words
+        var currentWordIndex = 0 {
             
-            changeLabel.text = words[newValue].string
-            
+            willSet {
+                
+                changeLabel.text = words[newValue].string
+                
+            }
         }
-    }
     
     
     @IBOutlet weak var imageView: UIImageView!
@@ -93,26 +107,8 @@ class GameController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //    authenticateLocalPlayer ()
-        //
-        //    }
-        //    //Initiate Gamecenter
-        //    func authenticateLocalPlayer () {
-        //
-        //        var localPlayer = GKLocalPlayer.localPlayer()
-        //
-        //        localPlayer.authenticateHandler = {(GameController, error) -> Void in
-        //
-        //        if (GameController != nil) {
-        //            self.presentViewController(GameController, animated) true, completion: nil
-        //        } else {
-        //            print(GKLocalPlayer.localPlayer().authenticated()
-        //            }
-        //        }
-        //    }
-        
         // Set the initial value of the label text.
-        changeLabel.text = words[currentWordIndex].string
+        
         
         //        self.view!.backgroundColor = UIColor.cyan()
         
@@ -142,6 +138,7 @@ class GameController: UIViewController {
         
         answerFeedback(isCorrect: currentWord.isVerb)
     }
+    
     
     
     @IBAction func Adjective(_ sender: UIButton) {
@@ -176,7 +173,7 @@ class GameController: UIViewController {
         // Increments the index that we're referencing in the global Array constant.  Modulo/Remainder is set for the total amount in the Array so the index will never go out of range, it will just go back to 0 and continue incrementing.
         currentWordIndex = (currentWordIndex + 1)
         
-        print("The list contains \(words.count) 30 words.")
+        print("The list contains \(words?.count) 30 words.")
         
         answerCorrect.isHidden = true
         answerIncorrect.isHidden = true
@@ -191,6 +188,7 @@ class GameController: UIViewController {
     }
     
 }
+
 
 
 

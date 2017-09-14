@@ -10,7 +10,7 @@ import UIKit
 
 class InstructionsController: UIViewController {
 
-    
+//Simple instructions on how to play game. 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = true

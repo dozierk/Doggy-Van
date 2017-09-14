@@ -14,7 +14,7 @@ class Animation {
     
     var audioPlayer = AVAudioPlayer()
     
-
+//Future animation will be handled here.
     
 }
 
