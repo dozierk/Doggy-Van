@@ -173,7 +173,7 @@ class GameController: UIViewController {
         // Increments the index that we're referencing in the global Array constant.  Modulo/Remainder is set for the total amount in the Array so the index will never go out of range, it will just go back to 0 and continue incrementing.
         currentWordIndex = (currentWordIndex + 1)
         
-        print("The list contains \(words?.count) 30 words.")
+        print("The list contains \(words.count) 30 words.")
         
         answerCorrect.isHidden = true
         answerIncorrect.isHidden = true
