@@ -75,15 +75,15 @@ class func convert(_ wordDictionaries: [[String : Any]], of type: String, _ comp
         
         switch type {
         case "verb":
-            let newVerb = Verb(string: value)
+            let newVerb = Word(value, as: .verb) //Verb(string: value)
             results.append(newVerb)
             print("Initialized a Verb:\(newVerb)")
         case "noun":
-            let newNoun = Noun(string: value)
+            let newNoun = Word(value, as: .noun) //Noun(string: value)
             results.append(newNoun)
             print("Initialized a Noun:\(newNoun)")
         case "adjective":
-            let newAdjective = Adjective(string: value)
+            let newAdjective = Word(value, as: .adjective) //Adjective(string: value)
             results.append(newAdjective)
             print("Initialized an Adjective:\(newAdjective)")
         default:

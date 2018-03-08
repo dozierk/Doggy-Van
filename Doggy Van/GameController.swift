@@ -25,11 +25,11 @@ class GameController: UIViewController {
         
         let currentWord = words[currentWordIndex]
         
-        if currentWord.string == words.last?.string {
-            
-            gameOver()
-            
-        }
+//        if currentWord == words.last {
+//
+//            gameOver()
+//
+//        }
         
         
         if isCorrect {
@@ -96,7 +96,7 @@ class GameController: UIViewController {
             
             willSet {
                 
-                changeLabel.text = words[newValue].string
+                changeLabel.text = words[newValue].description
                 
             }
         }
@@ -134,7 +134,7 @@ class GameController: UIViewController {
         
         let currentWord = words[currentWordIndex]
         
-        print (currentWord.type as Any)
+        print (currentWord.tense)
         
         answerFeedback(isCorrect: currentWord.isVerb)
     }
@@ -145,7 +145,7 @@ class GameController: UIViewController {
         
         let currentWord = words[currentWordIndex]
         
-        print (currentWord.type as Any)
+        print (currentWord.tense)
         
         answerFeedback(isCorrect: currentWord.isAdjective)
         
@@ -155,7 +155,7 @@ class GameController: UIViewController {
         
         let currentWord = words[currentWordIndex]
         
-        print (currentWord.type as Any)
+        print (currentWord.tense)
         
         answerFeedback(isCorrect: currentWord.isNoun)
     }
@@ -170,10 +170,16 @@ class GameController: UIViewController {
     
     @IBAction func NextWord(_ sender: UIButton) {
         
+        guard currentWordIndex < words.count - 1 else {
+            gameOver()
+            return
+        }
+
         // Increments the index that we're referencing in the global Array constant.  Modulo/Remainder is set for the total amount in the Array so the index will never go out of range, it will just go back to 0 and continue incrementing.
         currentWordIndex = (currentWordIndex + 1)
         
-        print("The list contains \(words?.count) 30 words.")
+        print("We're at \(currentWordIndex) of \(words.endIndex) words.")
+        
         
         answerCorrect.isHidden = true
         answerIncorrect.isHidden = true

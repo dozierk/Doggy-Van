@@ -8,46 +8,47 @@
 
 import Foundation
 
-/** The Base Model class that contains 2 properties, a string and a type(verb, adjective, or noun) The "type" property may end up being redundant because we can compare the data types to find out what kind of word it is. */
-class Word {
-    var string : String
-    var type : String?
-    var isVerb : Bool
-    var isAdjective: Bool
-    var isNoun: Bool
+protocol Grammatical {
+    var tense: Word.Class? { get set }
+}
+
+extension Grammatical {
+    var isNoun: Bool { return tense == .noun }
+    var isVerb: Bool { return tense == .verb }
+    var isAdjective: Bool { return tense == .adjective }
+}
+
+
+struct Word: Grammatical {
+    private var val : String?
+    var tense: Word.Class?
     
-    init(string: String) {
-        self.string = string
-        isVerb = false
-        isAdjective = false
-        isNoun = false
-        
+    enum Class {
+        case noun, verb, adjective
+    }
+    
+    init(_ value: String?, as tense: Word.Class) {
+        val = value
+        self.tense = tense
     }
 }
 
-/** A class for nouns. */
-class Noun: Word {
-    override init(string: String) {
-        super.init(string: string)
-        type = "noun"
-        isNoun = true
+extension Word: CustomStringConvertible {
+    var description: String {
+        return val ?? "nil"
     }
 }
 
-/** A class for Verbs. */
-class Verb: Word {
-    override init(string: String) {
-        super.init(string: string)
-        type = "verb"
-        isVerb = true
+extension Word: ExpressibleByStringLiteral {
+    typealias StringLiteralType = String
+    
+    init(stringLiteral value: Word.StringLiteralType) {
+        val = String(describing: value)
     }
 }
 
-/** A class for Adjectives. */
-class Adjective: Word {
-    override init(string: String) {
-        super.init(string: string)
-        type = "adjective"
-        isAdjective = true
+extension Word: ExpressibleByNilLiteral {
+    init(nilLiteral: ()) {
+        val = nil
     }
 }
