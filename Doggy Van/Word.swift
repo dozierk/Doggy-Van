@@ -8,28 +8,18 @@
 
 import Foundation
 
-protocol Grammatical {
-    var tense: Word.Class? { get set }
-}
-
-extension Grammatical {
-    var isNoun: Bool { return tense == .noun }
-    var isVerb: Bool { return tense == .verb }
-    var isAdjective: Bool { return tense == .adjective }
-}
-
-
 struct Word: Grammatical {
     private var val : String?
-    var tense: Word.Class?
+    var partOfSpeech: Class?
+    
+    init(_ value: String?, as partOfSpeech: Word.Class) {
+        val = value
+        self.partOfSpeech = partOfSpeech
+    }
     
     enum Class {
         case noun, verb, adjective
-    }
-    
-    init(_ value: String?, as tense: Word.Class) {
-        val = value
-        self.tense = tense
+        static var all: [Class] { return [.noun, .verb, .adjective]}
     }
 }
 
@@ -51,4 +41,14 @@ extension Word: ExpressibleByNilLiteral {
     init(nilLiteral: ()) {
         val = nil
     }
+}
+
+protocol Grammatical {
+    var partOfSpeech: Word.Class? { get set }
+}
+
+extension Grammatical {
+    var isNoun: Bool { return partOfSpeech == .noun }
+    var isVerb: Bool { return partOfSpeech == .verb }
+    var isAdjective: Bool { return partOfSpeech == .adjective }
 }

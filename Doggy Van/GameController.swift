@@ -50,7 +50,7 @@ class GameController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        Source.grab(amount: 30) { (results) in
+        Word.source(with: 30) { (results) in
             DispatchQueue.main.async {
                 self.words = results
             }
@@ -134,7 +134,7 @@ class GameController: UIViewController {
         
         let currentWord = words[currentWordIndex]
         
-        print (currentWord.tense)
+        print (currentWord.partOfSpeech)
         
         answerFeedback(isCorrect: currentWord.isVerb)
     }
@@ -145,7 +145,7 @@ class GameController: UIViewController {
         
         let currentWord = words[currentWordIndex]
         
-        print (currentWord.tense)
+        print (currentWord.partOfSpeech)
         
         answerFeedback(isCorrect: currentWord.isAdjective)
         
@@ -155,7 +155,7 @@ class GameController: UIViewController {
         
         let currentWord = words[currentWordIndex]
         
-        print (currentWord.tense)
+        print (currentWord.partOfSpeech)
         
         answerFeedback(isCorrect: currentWord.isNoun)
     }
