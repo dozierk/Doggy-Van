@@ -58,16 +58,16 @@ extension Word {
                 return
             }
             
-            convert(wordDictionaries, of: type, { (results) in
+            batch(from: wordDictionaries, of: type, { (results) in
                 newList = results
             })
         }
     }
     
     /// Converts an Array of Dictionaries with results from Wordnik into an Array of Words.
-    static func convert(_ wordDictionaries: [[String : Any]], of type: Word.Class, _ completion: @escaping ([Word]) -> ()) {
+    static func batch(from dictionaries: [[String : Any]], of type: Word.Class, _ completion: @escaping ([Word]) -> ()) {
         var results = [Word]()
-        for dictionary in wordDictionaries {
+        for dictionary in dictionaries {
             
             let value = dictionary["word"] as! String
             print("convertingDictinary:\(value)")
