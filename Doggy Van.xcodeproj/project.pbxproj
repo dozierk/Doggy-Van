@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		43EA2E0A6794A85FF3F3E376 /* Pods_Doggy_Van.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470B534B07F3A302642DA246 /* Pods_Doggy_Van.framework */; };
 		531CF5001D06389C000F5A67 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531CF4FF1D06389C000F5A67 /* Word.swift */; };
-		531CF5021D07B0BF000F5A67 /* WordSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531CF5011D07B0BF000F5A67 /* WordSource.swift */; };
 		E92BCC891C6EE146009A220A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92BCC881C6EE146009A220A /* AppDelegate.swift */; };
 		E92BCC8B1C6EE146009A220A /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92BCC8A1C6EE146009A220A /* GameController.swift */; };
 		E92BCC8E1C6EE146009A220A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92BCC8C1C6EE146009A220A /* Main.storyboard */; };
@@ -47,7 +46,6 @@
 /* Begin PBXFileReference section */
 		470B534B07F3A302642DA246 /* Pods_Doggy_Van.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Doggy_Van.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		531CF4FF1D06389C000F5A67 /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
-		531CF5011D07B0BF000F5A67 /* WordSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordSource.swift; sourceTree = "<group>"; };
 		6F3196E7D4C4C8EFEDD0DB38 /* Pods-Doggy Van.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doggy Van.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Doggy Van/Pods-Doggy Van.debug.xcconfig"; sourceTree = "<group>"; };
 		E72FBD3C8272065FB533201E /* Pods-Doggy Van.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doggy Van.release.xcconfig"; path = "Pods/Target Support Files/Pods-Doggy Van/Pods-Doggy Van.release.xcconfig"; sourceTree = "<group>"; };
 		E92BCC851C6EE146009A220A /* Doggy Van.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Doggy Van.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,7 +137,6 @@
 			children = (
 				E92BCC881C6EE146009A220A /* AppDelegate.swift */,
 				531CF4FF1D06389C000F5A67 /* Word.swift */,
-				531CF5011D07B0BF000F5A67 /* WordSource.swift */,
 				E9FDC17C1EB40380005AE40F /* InstructionsController.swift */,
 				E92BCC8A1C6EE146009A220A /* GameController.swift */,
 				E9FDC17E1EB4038D005AE40F /* EndController.swift */,
@@ -362,7 +359,6 @@
 			files = (
 				E9FDC1811EB40489005AE40F /* ScoreController.swift in Sources */,
 				E9FDC17D1EB40380005AE40F /* InstructionsController.swift in Sources */,
-				531CF5021D07B0BF000F5A67 /* WordSource.swift in Sources */,
 				E92BCC8B1C6EE146009A220A /* GameController.swift in Sources */,
 				531CF5001D06389C000F5A67 /* Word.swift in Sources */,
 				E9B37D571C8E9DCA007EDAA7 /* Animation.swift in Sources */,
