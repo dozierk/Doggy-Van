@@ -30,8 +30,9 @@ class GameController: UIViewController {
     /// Tracks the index of the global Array used as a Model Object.
     var currentWordIndex = 0 {
         willSet {
+            guard isViewLoaded else { return }
             // Whenever the index is changed, the label text is updated to reflect
-            changeLabel.text = words[newValue].description
+            changeLabel.text = words[newValue].rawValue
         }
     }
     
@@ -44,7 +45,7 @@ class GameController: UIViewController {
     @IBOutlet weak var answerCorrect: UILabel!
     @IBOutlet weak var answerIncorrect: UILabel!
     
-    override func viewDidLoad() {
+    @MainActor override func viewDidLoad() {
         super.viewDidLoad()
         
         // self.view!.backgroundColor = UIColor.cyan()
@@ -52,14 +53,7 @@ class GameController: UIViewController {
         imageView.animationImages = [ #imageLiteral(resourceName: "dogpic1"), #imageLiteral(resourceName: "Dogeyeclose1"), #imageLiteral(resourceName: "Dogtailleft1"), #imageLiteral(resourceName: "Dogtailright1")]
         imageView.animationDuration = 0.7
         imageView.startAnimating()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        Word.source(with: 30) { (results) in
-            DispatchQueue.main.async {
-                self.words = results
-            }
-        }
+        changeLabel.text = words.first?.rawValue
     }
     
     // All @IBActions contain similar conditional statements that recognize whether the word is a verb, adjective, or noun.
